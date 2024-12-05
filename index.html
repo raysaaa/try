@@ -3,24 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artisanal Jams |  Jammylicious Spreads</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@600&family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Faculty+Glyphic&family=Great+Vibes&family=Satisfy&family=Sour+Gummy:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-
-    <header>
-        <div>JAMMY-LICIOUS SPREADS</div>
-        <nav>
-            <ul>
-               <a href="home.html"><li>HOME</li></a>
-               <a href="contact.html"><li>CONTACT</li></a>
-                <a href="about.html"><li>ABOUT</li></a>
-            </ul>
-        </nav>
-    </header>
-
-
+     
+  <header class="navbar">
+    <div class="logo">
+        <img src="img/logojam.png" alt="Jam Icon">
+        <span class="brand-name">Jammy-licious Spreads</span>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <nav class="nav-links-container">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="jam.html">Our Jams</a></li>
+            <li><a href="#">Recipes</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
     <div class="carousel">
         <div class="list">
             <div class="item active" style="--background: #EA3D41">
@@ -28,18 +41,18 @@
                 <img src="img/fruit_strawberry.png" class="fruit">
             </div>
             <div class="item" style="--background: #2D5643">
-                <div class="content">coconut</div>
+                <div class="content">avocado</div>
                 <img src="img/fruit_avocado.png" class="fruit">
             </div>
             <div class="item hidden" style="--background: #E7A043">
                 <div class="content">mango</div>
-                <img src="img/fruit_orange.png" class="fruit">
+                <img src="img/fruit_mango.png" class="fruit">
             </div>
-            <div class="item hidden" style="--background: #E7A043">
+            <div class="item" style="--background: #F4C300">
                 <div class="content">banana</div>
-                <img src="img/fruit_orange.png" class="fruit">
+                <img src="img/" class="fruit">
             </div>
-            <div class="item hidden" style="--background: #FF6347">
+            <div class="item" style="--background: #FF8C00">
                 <div class="content">papaya</div>
                 <img src="img/fruit_orange.png" class="fruit">
             </div>
@@ -53,6 +66,104 @@
         </div>
     </div>
 
-    <script src="app.js"></script>
-</body>
+    <header class="hero-section">
+      <div class="hero-content">
+          <h1>Crafting Sweet Memories, One Jar at a Time</h1>
+          <p>
+              Welcome to <strong>Jammylicious Spreads</strong>! We're passionate about creating handcrafted, 
+              all-natural jams bursting with fruity goodness. Though we're just getting started, our dedication 
+              to quality and flavor is endless.
+          </p>
+          <p>Join us on this journey as we grow and spread joy!</p>
+          <a href="#shop" class="btn">Our Products</a>
+      </div>
+      <div class="hero-image">
+          <img src="img/jams.png" alt="Jam Jars">
+      </div>
+  </header>
+
+  <section class="vision-section">
+      <h2>Our Vision</h2>
+      <p>
+        To be the premier supplier of delicious and creatively unique jams with health benefits, satisfying customers with our inventive products, and setting the standard of excellence for customer satisfaction with each and every consume of our products.
+      </p>
+  </section>
+
+  <section class="mission-section">
+      <h2>Our Mission</h2>
+      <p>
+        To meticulously source organic fruits locally, crafting distinctive, savory, and nutritious jams that captivate the senses and ensure a harmonious blend of flavor and sustainability, offering customers a truly delightful and nourishing experience.
+      </p>
+  </section>
+    <section>
+      <h1>What Makes Our Jam Better</h1>
+    <div class="container">
+        <div class="center-img">
+            <img src="img/download.png" alt="Jam">
+        </div>
+
+        <div class="benefit">
+            <img src="img/natural.png" alt="Natural">
+            <p>All Natural</p>
+        </div>
+
+        <div class="benefit">
+            <img src="img/preservatives.png" alt="Preservatives">
+            <p>No Preservatives</p>
+        </div>
+
+        <div class="benefit">
+            <img src="benefit3.png" alt="MSG">
+            <p>No Added MSG</p>
+        </div>
+
+        <div class="benefit">
+            <img src="img/highqual.png" alt="Quality">
+            <p>High Quality</p>
+        </div>
+
+        <div class="benefit">
+            <img src="benefit5.png" alt="Fresh">
+            <p>Freshly Made</p>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-about">
+              <h3>About Jammy-licious Spreads</h3>
+              <p>Jammy-licious Spreads provides jams that are palatable, unique taste, and healthier than other spreads which contained preservatives. Jammy-licious Spreads is a must-go shop for a yummy-licious add-ons to any of your favourite snacks.</p>
+          </div>
+          <div class="footer-social">
+              <h3>Follow Us</h3>
+              <p>Stay connected and follow us on social media:</p>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/raizaaaaaaaaaa"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.tiktok.com/@raysaa790"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/rayysaaaa_"><i class="fab fa-tiktok"></i></a>
+              </div>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+          <div class="footer-contact">
+              <h3>Contact Us</h3>
+              <p>Email: raizaperesores@gmail.com</p>
+              <p>Phone: +639278026832</p>
+              <p>Address: Cebu City, Cebu, Philippines</p>
+          </div>
+      </div>
+  
+      <div class="footer-bottom">
+          <p>&copy; 2024 Jammy-licious Spreads. All rights reserved.</p>
+      </div>
+  </footer>
+  <script src="app.js"></script>
 </html>
